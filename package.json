@@ -1,0 +1,27 @@
+{
+  "name": "Schedule-Next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindquaker/Schedule-Next.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindquaker/Schedule-Next/issues"
+  },
+  "homepage": "https://github.com/mindquaker/Schedule-Next#readme",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
