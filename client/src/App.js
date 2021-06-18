@@ -5,6 +5,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavBar } from "./components/Nav";
 
+
 //https://medium.com/weekly-webtips/create-and-deploy-your-first-react-web-app-with-a-node-js-backend-ec622e0328d7
 //https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      
     </div>
   );
 }
