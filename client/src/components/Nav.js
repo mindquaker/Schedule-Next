@@ -5,14 +5,16 @@ import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 export function NavBar(){
     return(
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" className="space-around">
                 <Container>
                     <Navbar.Brand href="#home">SN</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="mr-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#info">Info</Nav.Link>
+                    </Nav>
+                    <Nav className="ml-auto">
                         <Nav.Link href="#signup">Signup</Nav.Link>
                         <Nav.Link href="#login">Login</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -21,6 +23,7 @@ export function NavBar(){
                         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
