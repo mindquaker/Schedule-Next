@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+.heading{
+  margin-left: 25%;
+  margin-top: 5%;
+  
+}
+.sub-heading{
+  margin-left: 35%;
+  font-weight: bold;
+}
+.buttons{
+  display:flex;
+  margin-left: 43%;
+  margin-top: 100px;
+}
+.or{
+  margin:0 10px 0 10px;
+}
+.card{
+  margin-left:40%;
+  margin-top: 10px;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  
+}

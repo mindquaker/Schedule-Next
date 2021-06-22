@@ -1,11 +1,11 @@
 /* eslint-disable */
 import React from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export function NavBar() {
   return (
     <div>
-      <Navbar bg='light' expand='lg'>
+      <Navbar bg='warning' expand='lg'>
         <Navbar.Brand href='#home'>SN</Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -16,7 +16,7 @@ export function NavBar() {
           <Nav className='ml-auto'>
             <Nav.Link href='#home'>Sign Up</Nav.Link>
             <Nav.Link href='#link'>Login</Nav.Link>
-            <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
+            <NavDropdown title='My Account' id='basic-nav-dropdown'>
               <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
               <NavDropdown.Item href='#action/3.2'>
                 Another action
