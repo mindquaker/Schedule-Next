@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react";
 import "../App.css";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card,  Carousel } from "react-bootstrap";
 import { Cards } from "./Cards";
 
 export function HomeBody() {
@@ -13,7 +13,24 @@ export function HomeBody() {
       <p class='sub-heading'>
         Here's where you'll keep track of all your online meetings!!!!
       </p>
-      <Cards />
+    
+      <Carousel>
+        <Carousel.Item interval={1000}>
+          <Cards />
+        </Carousel.Item>
+        <Carousel.Item interval={500}>
+         <Cards />
+        </Carousel.Item>
+        <Carousel.Item>
+         <Cards />
+        </Carousel.Item>
+        <Carousel.Item>
+         <Cards />
+        </Carousel.Item>
+        <Carousel.Item>
+         <Cards />
+        </Carousel.Item>
+      </Carousel>
       <div class='buttons'>
         <Button variant='primary'>Login</Button>
         <h3 class='or'>OR</h3>
