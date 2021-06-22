@@ -5,7 +5,7 @@ import "../App.css";
 import { Card, Carousel } from "react-bootstrap";
 export function Cards(props) {
   const  {platform,
-  logo} = props;
+  logo, tagline} = props;
   return (
     <div>
       <Card bg={"primary"} style={{ width: "18rem" }} className='mb-2'>
@@ -15,9 +15,7 @@ export function Cards(props) {
             <Card.Body>
               <Card.Title> {platform} </Card.Title>
               <Card.Text>
-                Power your voice communications with our global cloud phone
-                solution with secure call routing, call queues, SMS, elevate
-                calls to meetings, and much more.
+                {tagline}
               </Card.Text>
             </Card.Body>
           </Card>
